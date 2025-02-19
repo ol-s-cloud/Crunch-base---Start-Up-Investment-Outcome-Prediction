@@ -7,7 +7,7 @@ A machine learning project that predicts startup IPO outcomes using ensemble met
 In this research we adopt an ensemble approach to model development, utilizing a combination of Logistic Regression, XGBoost, Random Forests, K-Nearest Neighbors and
 Neural Networks to make predictions alongside with SHapley Additive explanations (SHAP) to address the concerns of explainability and transparency and to justify the predictions. See experiment set up below:
 
-(https://raw.githubusercontent.com/ol-s-cloud/Start-Up-Investment-Outcome-Prediction/Files/experiment-set-up.png)
+![Experiment Set-up](https://raw.githubusercontent.com/ol-s-cloud/Start-Up-Investment-Outcome-Prediction/Files/experiment-set-up.png)
 
 <p align="center">
 <a href="#-key-features">Key Features</a> •
