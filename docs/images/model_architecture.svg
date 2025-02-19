@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="400" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background -->
+    <rect width="800" height="400" fill="#f8f9fa"/>
+    
+    <!-- Title -->
+    <text x="400" y="40" font-family="Arial" font-size="24" text-anchor="middle" fill="#212529">
+        Model Architecture: Ensemble Approach
+    </text>
+
+    <!-- Data Input -->
+    <g transform="translate(50,100)">
+        <rect width="150" height="60" rx="5" fill="#007bff" opacity="0.8"/>
+        <text x="75" y="35" font-family="Arial" font-size="14" fill="white" text-anchor="middle">
+            Input Data
+        </text>
+    </g>
+
+    <!-- Feature Engineering -->
+    <g transform="translate(250,100)">
+        <rect width="150" height="60" rx="5" fill="#28a745" opacity="0.8"/>
+        <text x="75" y="35" font-family="Arial" font-size="14" fill="white" text-anchor="middle">
+            Feature Engineering
+        </text>
+    </g>
+
+    <!-- Models -->
+    <g transform="translate(450,50)">
+        <rect width="120" height="40" rx="5" fill="#dc3545" opacity="0.8"/>
+        <text x="60" y="25" font-family="Arial" font-size="12" fill="white" text-anchor="middle">
+            XGBoost
+        </text>
+    </g>
+
+    <g transform="translate(450,100)">
+        <rect width="120" height="40" rx="5" fill="#dc3545" opacity="0.8"/>
+        <text x="60" y="25" font-family="Arial" font-size="12" fill="white" text-anchor="middle">
+            Random Forest
+        </text>
+    </g>
+
+    <g transform="translate(450,150)">
+        <rect width="120" height="40" rx="5" fill="#dc3545" opacity="0.8"/>
+        <text x="60" y="25" font-family="Arial" font-size="12" fill="white" text-anchor="middle">
+            Neural Network
+        </text>
+    </g>
+
+    <!-- Ensemble -->
+    <g transform="translate(620,100)">
+        <rect width="130" height="60" rx="5" fill="#6610f2" opacity="0.8"/>
+        <text x="65" y="35" font-family="Arial" font-size="14" fill="white" text-anchor="middle">
+            Ensemble
+        </text>
+    </g>
+
+    <!-- Arrows -->
+    <g stroke="#495057" stroke-width="2" fill="none">
+        <!-- Input to Feature Engineering -->
+        <path d="M200,130 L250,130"/>
+        
+        <!-- Feature Engineering to Models -->
+        <path d="M400,130 L450,70"/>
+        <path d="M400,130 L450,120"/>
+        <path d="M400,130 L450,170"/>
+        
+        <!-- Models to Ensemble -->
+        <path d="M570,70 L620,130"/>
+        <path d="M570,120 L620,130"/>
+        <path d="M570,170 L620,130"/>
+    </g>
+
+    <!-- SHAP Values -->
+    <g transform="translate(620,200)">
+        <rect width="130" height="40" rx="5" fill="#17a2b8" opacity="0.8"/>
+        <text x="65" y="25" font-family="Arial" font-size="12" fill="white" text-anchor="middle">
+            SHAP Analysis
+        </text>
+    </g>
+
+    <!-- Arrow to SHAP -->
+    <path d="M685,160 L685,200" stroke="#495057" stroke-width="2" fill="none"/>
+</svg>
