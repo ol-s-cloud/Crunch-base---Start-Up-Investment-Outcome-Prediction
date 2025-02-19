@@ -2,7 +2,12 @@
 
 ![Model Architecture](https://raw.githubusercontent.com/ol-s-cloud/Start-Up-Investment-Outcome-Prediction/main/docs/images/model_architecture.svg)
 
-A machine learning project that predicts startup IPO outcomes using ensemble methods and SHAP explanations. This research explores the transformative potential of machine learning and artificial intelligence in predicting the probability of a possible IPO using binary classification by analyzing key features from Crunchbase data.
+A machine learning project that predicts startup IPO outcomes using ensemble methods and SHAP explanations. This research explores the transformative potential of machine learning and artificial intelligence in predicting the probability of a possible IPO using binary classification by analyzing key features from data provided by Crunchbase.
+
+In this research we adopt an ensemble approach to model development, utilizing a combination of Logistic Regression, XGBoost, Random Forests, K-Nearest Neighbors and
+Neural Networks to make predictions alongside with SHapley Additive explanations (SHAP) to address the concerns of explainability and transparency and to justify the predictions. See experiment set up below:
+
+(https://raw.githubusercontent.com/ol-s-cloud/Start-Up-Investment-Outcome-Prediction/Files/experiment-set-up.png)
 
 <p align="center">
 <a href="#-key-features">Key Features</a> •
@@ -22,6 +27,7 @@ A machine learning project that predicts startup IPO outcomes using ensemble met
 - Extensive feature engineering
 
 ## 🚀 Quick Start
+(not sure you'd need this but just incase. For the full python repository and code version, see: https://github.com/ol-s-cloud/start-up-inv-co-pilot
 
 ```bash
 # Clone the repository
@@ -41,7 +47,7 @@ python src/predict.py --sample data/example.csv
 
 ## 📊 Model Performance
 
-Our ensemble model achieved exceptional results:
+Results from the ensemble models:
 
 | Metric | Score |
 |--------|--------|
@@ -53,16 +59,24 @@ Our ensemble model achieved exceptional results:
 
 ![Model Performance](https://raw.githubusercontent.com/ol-s-cloud/Start-Up-Investment-Outcome-Prediction/main/docs/images/performance.svg)
 
+## ROC Analysis Curve 
+(https://raw.githubusercontent.com/ol-s-cloud/Start-Up-Investment-Outcome-Prediction/Files/experiment-set-up.png)
+
+The outcome of the research suggests that of all the different models trained and tuned for this experiment, Gradient Boosting (XGBoost) performed the best with a 91.6% recall rate, minimizing false results while logistic regression was the least performing model with about
+16.8% recall rate. Although SHAP is useful for explaining predictions and providing insights into individual predictions, it however does not imply causality. see full research here - (https://raw.githubusercontent.com/ol-s-cloud/main/ML%20%26%20Data%20Science%20-%20IPO%20Vs%20Non-IPO%20Start%20up%20Outcome%20Prediction%20.pdf)
+
 ## 🗺️ Research Roadmap
 
-### Previous Stage: Academic Research (2023)
-- Master's dissertation research implementation
+### Previous: Academic Research (2023)
+- Master's dissertation research
 - ML model development for IPO prediction
 - Crunchbase data integration & analysis
 - Ensemble model development & validation
 
-### Current Stage: start-up-inv-co-pilot (2024)
+### Current: start-up-inv-co-pilot (2024/2025) 
 Open-source Python repository for startup investment analysis:
+
+Full project here - https://github.com/ol-s-cloud/start-up-inv-co-pilot
 
 1. **Core Features**
    - Automated data processing pipelines
@@ -82,7 +96,7 @@ Open-source Python repository for startup investment analysis:
    - Market trend analysis
    - Portfolio optimization
 
-### Future Vision: Open Source Intelligence Platform (2025+)
+### Planned: Open Source Intelligence Platform (2025+)
 Building a comprehensive startup intelligence ecosystem:
 
 1. **Data Integration Hub**
@@ -108,7 +122,7 @@ Building a comprehensive startup intelligence ecosystem:
 We welcome collaboration on:
 
 1. **Research Topics**
-   - ML in venture capital
+   - ML in venture capital or other industrial applications
    - Startup success prediction
    - Market trend analysis
    - Risk assessment models
@@ -126,8 +140,7 @@ We welcome collaboration on:
    - Comparative studies
 
 To collaborate or discuss research opportunities:
-- 📧 Email: olar.said@icloud.com
-- 🎓 Academic: ols00082@students.stir.ac.uk
+- 📧 Email: gs_wl8891@icloud.com
 - 💻 GitHub: Create an issue or pull request
 
 ## 🌐 Current Ecosystem
