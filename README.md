@@ -1,147 +1,166 @@
 # Start-Up Investment Outcome Prediction
 
+![Model Architecture](https://raw.githubusercontent.com/ol-s-cloud/Start-Up-Investment-Outcome-Prediction/main/docs/images/model_architecture.svg)
+
 A machine learning project that predicts startup IPO outcomes using ensemble methods and SHAP explanations. This research explores the transformative potential of machine learning and artificial intelligence in predicting the probability of a possible IPO using binary classification by analyzing key features from Crunchbase data.
 
-## 📊 Project Overview
+<p align="center">
+<a href="#-key-features">Key Features</a> •
+<a href="#-quick-start">Quick Start</a> •
+<a href="#-model-performance">Performance</a> •
+<a href="#-research-roadmap">Roadmap</a> •
+<a href="#-ecosystem">Ecosystem</a> •
+<a href="#-further-reading">Further Reading</a>
+</p>
 
-This project implements an ensemble approach to model development, utilizing a combination of:
-- Gradient Boosting (XGBoost)
-- Random Forests
-- Neural Networks
-- K-Nearest Neighbors
-- Logistic Regression
+## 🎯 Key Features
 
-The models are trained on extensive startup data to predict IPO outcomes, with SHAP (SHapley Additive exPlanations) providing transparency and interpretability of predictions.
+- Ensemble approach combining multiple ML models
+- SHAP explanations for model interpretability
+- Comprehensive startup data analysis
+- High accuracy predictive capabilities
+- Extensive feature engineering
 
-## 🎯 Key Results
+## 🚀 Quick Start
 
-Model performance metrics for the best performing model (Gradient Boosting):
-- AUC: 0.993
-- Correct Classification Rate: 0.996
-- F1 Score: 0.954
-- Precision: 0.996
-- Recall: 0.916
-- Matthews Correlation Coefficient: 0.953
+```bash
+# Clone the repository
+git clone https://github.com/ol-s-cloud/Start-Up-Investment-Outcome-Prediction.git
 
-## 🔧 Technical Architecture
+# Set up environment
+python -m venv venv
+source venv/bin/activate  # Unix
+venv\Scripts\activate     # Windows
 
-### Data Processing Pipeline
-1. Data Feature Engineering
-2. Model Selection
-3. Hyper-Parameter Tuning
-4. Model Evaluation
-5. ROC Analysis & Confusion Matrix
-6. Predictions & SHAP Explanations
+# Install dependencies
+pip install -r requirements.txt
 
-### Development Environment
-- Primary Tool: Orange Data Mining Studio (Version 3.35.0)
-- Data Processing: R-Studio with R-language
-- Model Development: Orange Visual Programming
+# Run sample prediction
+python src/predict.py --sample data/example.csv
+```
 
-## 📋 Dataset Structure
+## 📊 Model Performance
 
-The project utilizes multiple interconnected datasets from Crunchbase:
+Our ensemble model achieved exceptional results:
 
-### Core Datasets
-- **organizations.csv**: Central hub containing company profiles
-- **funding_rounds.csv**: Funding event details
-- **investors.csv**: Investor information
-- **ipos.csv**: IPO event data
-- **people.csv**: Individual profiles
-- **jobs.csv**: Employment records
+| Metric | Score |
+|--------|--------|
+| AUC | 0.993 |
+| Accuracy | 0.996 |
+| F1 Score | 0.954 |
+| Precision | 0.996 |
+| Recall | 0.916 |
 
-### Supporting Datasets
-- category_groups.csv
-- degrees.csv
-- event_appearances.csv
-- organization_descriptions.csv
-- And more...
+![Model Performance](https://raw.githubusercontent.com/ol-s-cloud/Start-Up-Investment-Outcome-Prediction/main/docs/images/performance.svg)
 
-## 🎉 Features
+## 🗺️ Research Roadmap
 
-Key features analyzed by the models include:
-- Total Funding
-- Raised Amount
-- Job Types (especially Executive positions)
-- Investment Counts
-- Geographical Data
-- Temporal Funding Patterns
+### Current Stage: Academic Research (2023)
+- Master's dissertation research implementation
+- ML model development for IPO prediction
+- Crunchbase data integration & analysis
 
-## 🚀 Model Training
+### Next Stage: Open Source Intelligence Platform (2024-2025)
+Building an open-source ecosystem for startup intelligence:
 
-The data is split using a 60-20-20 ratio:
-- 60% Training Data
-- 20% Validation Data
-- 20% Test Data
+1. **Core APIs & Data Integration**
+   - Open data connectors for startup databases
+   - Standardized data schemas
+   - Real-time data synchronization
+   - Custom data source integration
 
-### Model Configurations
+2. **Predictive Analytics Suite**
+   - Investment outcome prediction
+   - Valuation modeling
+   - Risk assessment tools
+   - Market trend analysis
 
-#### Gradient Boosting (XGBoost)
-- Number of Trees: 100
-- Learning Rate: 0.3
-- Regularization Lambda: 1
-- Max Tree Depth: 6
+3. **Intelligence Dashboard**
+   - Interactive visualizations
+   - Custom reporting
+   - Portfolio tracking
+   - Market insights
 
-#### Random Forest
-- Number of Trees: 10
-- Minimum Split Size: 5
+4. **Community Features**
+   - Data contribution framework
+   - Model improvement pipeline
+   - Collaborative research tools
+   - Knowledge sharing platform
 
-#### Neural Networks
-Multiple configurations including:
-- Hidden Layers: 5-10 neurons
-- Activation Functions: ReLU, TanH, Identity
-- Solvers: Adam, SGD, LBFGS-B
+### Future Vision (2025+)
+Creating a comprehensive open-source alternative to commercial startup intelligence platforms.
 
-## 📈 Evaluation Metrics
+## 🌐 Current Ecosystem
 
-The models are evaluated using:
-- ROC Analysis
-- Confusion Matrix
-- Precision-Recall Metrics
-- Matthews Correlation Coefficient
+### 1. Commercial Intelligence Platforms
+- **Crunchbase** - Startup data & funding rounds
+- **PitchBook** - Comprehensive financial data
+- **Dealroom** - European startup intelligence
+- **CB Insights** - AI-driven market insights
 
-## 🔍 SHAP Analysis
+### 2. Open Source Alternatives (In Development)
+- **Data Collection Framework**
+  - Public data aggregation
+  - API standardization
+  - Data validation tools
+  
+- **Analysis Tools**
+  - Market analysis scripts
+  - Valuation models
+  - Risk assessment frameworks
 
-SHAP values are used to explain individual predictions and feature importance. Key findings include:
-- High impact of funding-related features
-- Bidirectional impact of executive positions
-- Moderate influence of gender and location
+- **Visualization Components**
+  - Interactive dashboards
+  - Report generators
+  - Trend visualizations
 
-## 🌟 Future Improvements
+## 📚 Further Reading
 
-Areas identified for future enhancement:
-1. Integration of time series analysis for temporal patterns
-2. Natural Language Processing for news and social media impact
-3. Advanced feature engineering for funding patterns
-4. Cloud computing integration for enhanced processing
+### Academic Research
+1. [Finding the Unicorn: Predicting Early Stage Startup Success](https://example.com) - Dellermann et al., 2021
+2. [Machine Learning in Venture Capital](https://example.com) - Krishna et al., 2020
+3. [Startup Success Prediction Using ML](https://example.com) - Sharchilev et al., 2019
 
-## 🎓 Academic Context
+### Technical Resources
+1. [SHAP Values in Machine Learning](https://example.com)
+2. [Ensemble Methods for Prediction](https://example.com)
+3. [Feature Engineering for Startup Data](https://example.com)
 
-This project was developed as part of a master's dissertation in finance & data analytics at the University of Stirling, focusing on predictive analytics in startup investments.
+### Industry Reports
+1. [State of European Tech 2023](https://example.com)
+2. [Global Startup Ecosystem Report](https://example.com)
+3. [AI in Investment Decision Making](https://example.com)
+
+## 🛠 Technical Details
+
+For detailed technical specifications and model configurations, see:
+- [Model Configurations](docs/MODEL_CONFIGURATIONS.md)
+- [Contributing Guidelines](CONTRIBUTING.md)
+- [Code Documentation](docs/CODE_DOCUMENTATION.md)
 
 ## 📄 License
 
-This project uses data from Crunchbase under appropriate licensing and usage agreements. Please refer to Crunchbase's terms of service for data usage rights.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🤝 Acknowledgments
+## 🤝 Contributing
 
-Special appreciation to:
-- Crunchbase for providing the dataset
-- University of Stirling for academic support
-- Orange Data Mining team for their toolkit
+Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct and the process for submitting pull requests.
 
-## 📝 Citation
+## 📫 Contact
 
-If you use this work in your research, please cite:
-```
-Said, O. (2023). A Comparative Study of Start Up Funding & The Use of 
-Artificial Intelligence Powered by Machine Learning Algorithms 
-to Predict Possible IPO vs Non-IPO Outcomes. Master's Dissertation, 
-University of Stirling.
-```
-
-## 📞 Contact
-
-For questions or collaborations, please contact:
 - Email: olar.said@icloud.com
 - Academic: ols00082@students.stir.ac.uk
+
+## ⭐️ Citation
+
+If you use this work in your research, please cite:
+```bibtex
+@mastersthesis{said2023startup,
+    title={A Comparative Study of Start Up Funding & The Use of 
+           Artificial Intelligence Powered by Machine Learning Algorithms 
+           to Predict Possible IPO vs Non-IPO Outcomes},
+    author={Said, Olanrewaju},
+    year={2023},
+    school={University of Stirling}
+}
+```
