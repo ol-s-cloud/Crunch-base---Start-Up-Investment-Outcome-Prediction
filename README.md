@@ -8,14 +8,28 @@ In this research we adopt an ensemble approach to model development, utilizing a
 
 ![Experiment Set-up](https://raw.githubusercontent.com/ol-s-cloud/Start-Up-Investment-Outcome-Prediction/main/Files/experiment-set-up.png)
 
-## 🎯 Key Takeaways:
-• The research uses **Crunchbase data** to analyze key features that influence IPO outcomes.
-• The study employs **multiple machine learning models,** including **Logistic Regression, XGBoost, Random Forests, K-Nearest Neighbors, and Neural Networks.**
-• **XGBoost performed the best** with a **91.6% recall rate**, while **Logistic Regression had the weakest recall at 16.8%.**
-• **SHapley Additive Explanations (SHAP)** is used to interpret and explain model predictions.
-• Ethical considerations include **removing personal information** and avoiding **look-ahead bias.**
-• The study is focused on **UK-based start-ups** from **1999-2020.**
-• **Future recommendations** include integrating **time-series analysis** and **natural language processing (NLP)** for behavioral factors.
+## 🎯 Key Takeaways
+
+- **Data Source**: Utilized **Crunchbase data** to analyze key features influencing IPO outcomes
+- **Machine Learning Models**: Employed multiple models including:
+  * Logistic Regression
+  * XGBoost
+  * Random Forests
+  * K-Nearest Neighbors
+  * Neural Networks
+- **Model Performance**: 
+  * **XGBoost** performed best with a **91.6% recall rate**
+  * **Logistic Regression** had the weakest recall at **16.8%**
+- **Interpretability**: Used **SHapley Additive Explanations (SHAP)** to interpret and explain model predictions
+- **Ethical Considerations**: 
+  * Removed personal information
+  * Avoided look-ahead bias
+- **Research Scope**: 
+  * Focused on **UK-based start-ups**
+  * Analyzed data from **1999-2020**
+- **Future Recommendations**: 
+  * Integrate **time-series analysis**
+  * Incorporate **natural language processing (NLP)** for behavioral factors
 
 ## Crunchbase Entity Relationship
 ![Crunchbase Entity Relationship](https://raw.githubusercontent.com/ol-s-cloud/Start-Up-Investment-Outcome-Prediction/main/Files/crunchbase%20entity%20relationship.png)
@@ -28,13 +42,5 @@ In this research we adopt an ensemble approach to model development, utilizing a
 <a href="#-ecosystem">Ecosystem</a> •
 <a href="#-further-reading">Further Reading</a>
 </p>
-
-## 🎯 Key Features
-
-- Ensemble approach combining multiple ML models
-- SHAP explanations for model interpretability
-- Comprehensive startup data analysis
-- High accuracy predictive capabilities
-- Extensive feature engineering
 
 [Rest of the README remains the same...]
