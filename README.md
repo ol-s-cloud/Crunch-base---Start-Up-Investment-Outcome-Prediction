@@ -1,4 +1,19 @@
-[Previous content remains the same until Citation section]
+# Start-Up Investment Outcome Prediction
+
+![Model Architecture](https://raw.githubusercontent.com/ol-s-cloud/Start-Up-Investment-Outcome-Prediction/main/docs/images/model_architecture.svg)
+
+A machine learning project that predicts startup IPO outcomes using ensemble methods and SHAP explanations. This research explores the transformative potential of machine learning and artificial intelligence in predicting the probability of a possible IPO using binary classification by analyzing key features from Crunchbase data.
+
+<p align="center">
+<a href="#-key-features">Key Features</a> •
+<a href="#-quick-start">Quick Start</a> •
+<a href="#-model-performance">Performance</a> •
+<a href="#-research-roadmap">Roadmap</a> •
+<a href="#-ecosystem">Ecosystem</a> •
+<a href="#-further-reading">Further Reading</a>
+</p>
+
+[Previous sections remain exactly the same until Citation]
 
 ## ⭐️ Citation
 
