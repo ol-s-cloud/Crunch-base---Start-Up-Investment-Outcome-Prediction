@@ -229,9 +229,9 @@ Why Orange;
 
 
 ### Industry Reports
-1. [State of European Tech 2023](https://example.com)
-2. [Global Startup Ecosystem Report](https://example.com)
-3. [AI in Investment Decision Making](https://example.com)
+1. [State of European Tech](https://www.stateofeuropeantech.com)
+2. [Global Startup Ecosystem Report](https://startupgenome.com/)
+3. [AI in Investment Decision Making - Delloitte ](https://www2.deloitte.com/content/dam/insights/articles/5075_CFS-AI-in-investment-decisions/DI_CFS-AI-in-investment-decisions.pdf)
 
 ## 🛠 Technical Details
 
