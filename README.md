@@ -10,7 +10,7 @@ This research adopts an ensemble approach to model development, utilizing a comb
 
 ## Key Takeaways
 
-- **Data Source**: For research purposes, Crunchbase provided full apis access to data and thus was able to work with **Crunchbase data** to analyze key features influencing IPO outcomes -- All data used for this research is updated as at: August 7, 2023. This date serves as the snapshot for the dataset used in the study.
+- **Data Source**: For research purposes, Crunchbase provided full apis access to data and thus was able to work with **Crunchbase data** to analyze key features influencing IPO outcomes -- PS: ONLY ON UK START-UPS and All data used for this research is updated as at: August 7, 2023. This date serves as the snapshot for the dataset used in the study.
 
  More Details on Crunchbase Data here - https://data.crunchbase.com/docs/getting-started
  
