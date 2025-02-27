@@ -4,13 +4,16 @@
 
 A machine learning project that predicts startup IPO outcomes using ensemble methods and SHAP explanations. This research explores the transformative potential of machine learning and artificial intelligence in predicting the probability of a possible IPO using binary classification by analyzing key features from data provided by Crunchbase.
 
-In this research we adopt an ensemble approach to model development, utilizing a combination of Logistic Regression, XGBoost, Random Forests, K-Nearest Neighbors and Neural Networks to make predictions alongside with SHapley Additive explanations (SHAP) to address the concerns of explainability and transparency and to justify the predictions. See experiment set up below:
+This research adopts an ensemble approach to model development, utilizing a combination of Logistic Regression, XGBoost, Random Forests, K-Nearest Neighbors and Neural Networks to make predictions alongside with SHapley Additive explanations (SHAP) to address the concerns of explainability and transparency and to justify the predictions. See experiment set up below:
 
 ![Experiment Set-up](https://raw.githubusercontent.com/ol-s-cloud/Start-Up-Investment-Outcome-Prediction/main/Files/experiment-set-up.png)
 
-## 🎯 Key Takeaways
+## Key Takeaways
 
-- **Data Source**: Utilized **Crunchbase data** to analyze key features influencing IPO outcomes
+- **Data Source**: For research purposes, Crunchbase provided full apis access to data and thus was able to work with **Crunchbase data** to analyze key features influencing IPO outcomes -- All data used for this research is updated as at: August 7, 2023. This date serves as the snapshot for the dataset used in the study.
+
+ More Details on Crunchbase Data here - https://data.crunchbase.com/docs/getting-started
+ 
 - **Machine Learning Models**: Employed multiple models including:
   * Logistic Regression
   * XGBoost
@@ -43,7 +46,7 @@ In this research we adopt an ensemble approach to model development, utilizing a
 <a href="#-further-reading">Further Reading</a>
 </p>
 
-## 🎯 Key Features
+## Key Features
 
 - Ensemble approach combining multiple ML models
 - SHAP explanations for model interpretability
@@ -51,8 +54,8 @@ In this research we adopt an ensemble approach to model development, utilizing a
 - High accuracy predictive capabilities
 - Extensive feature engineering
 
-## 🚀 Quick Start
-(not sure you'd need this but just incase. For the full python repository and code version, see: https://github.com/ol-s-cloud/start-up-inv-co-pilot)
+##  Quick Start
+(not sure you'd need this but just incase. For the full python repository and code version, I'll maybe be deploying that here on my spare time --- see: https://github.com/ol-s-cloud/start-up-inv-co-pilot)
 
 **Note**: This research was primarily conducted using Orange Data Studio, an open-source machine learning and data visualization platform that played a crucial role in model development and analysis.
 
@@ -72,7 +75,7 @@ pip install -r requirements.txt
 python src/predict.py --sample data/example.csv
 ```
 
-## 📊 Model Performance
+##  Model Performance
 
 Results from the ensemble models:
 
@@ -91,7 +94,7 @@ Results from the ensemble models:
 
 The outcome of the research suggests that of all the different models trained and tuned for this experiment, Gradient Boosting (XGBoost) performed the best with a 91.6% recall rate, minimizing false results while logistic regression was the least performing model with about 16.8% recall rate. Although SHAP is useful for explaining predictions and providing insights into individual predictions, it however does not imply causality. See the full research paper [here](https://raw.githubusercontent.com/ol-s-cloud/Start-Up-Investment-Outcome-Prediction/main/ML%20%26%20Data%20Science%20-%20IPO%20Vs%20Non-IPO%20Start%20up%20Outcome%20Prediction%20.pdf).
 
-## 🗺️ Research Roadmap
+##  Research Roadmap
 
 ### Previous: Academic Research (2023)
 - Master's dissertation research
@@ -143,9 +146,9 @@ Building a comprehensive startup intelligence ecosystem:
    - Research sharing
    - Knowledge base
 
-## 🤝 Research Collaboration
+##  Research Collaboration
 
-We welcome collaboration on:
+I'm open to research collaboration on:
 
 1. **Research Topics**
    - ML in venture capital or other industrial applications
@@ -169,7 +172,7 @@ To collaborate or discuss research opportunities:
 - 📧 Email: gs_wl8891@icloud.com
 - 💻 GitHub: Create an issue or pull request
 
-## 🌐 Current Ecosystem
+##  Current Ecosystem
 
 ### 1. Commercial Intelligence Platforms
 - **Crunchbase** - Startup data & funding rounds
@@ -193,21 +196,37 @@ To collaborate or discuss research opportunities:
   - Report generators
   - Trend visualizations
 
-## 📚 Further Reading
+##  Further Reading
 
-### Academic Research
-1. [Finding the Unicorn: Predicting Early Stage Startup Success](https://example.com) - Dellermann et al., 2021
-2. [Machine Learning in Venture Capital](https://example.com) - Krishna et al., 2020
-3. [Startup Success Prediction Using ML](https://example.com) - Sharchilev et al., 2019
+### Related Academic Research
+1. [Finding the Unicorn: Predicting Early Stage Startup Success](https://www.researchgate.net/publication/325058611_Finding_the_Unicorn_Predicting_Early_Stage_Startup_Success_Through_a_Hybrid_Intelligence_Method) - Dellermann et al., 2021
+2. [Machine Learning in Venture Capital](https://arxiv.org/abs/1606.04838) - Krishna et al., 2020
+3. [Startup Success Prediction Using ML](https://www.researchgate.net/publication/328441510_Web-based_Startup_Success_Prediction) - Sharchilev et al., 2019
 
 ### Technical Resources
-1. [SHAP Values in Machine Learning](https://example.com)
-2. [Ensemble Methods for Prediction](https://example.com)
-3. [Feature Engineering for Startup Data](https://example.com)
-4. **Orange Data Studio**: An open-source machine learning platform used in this research
+1. [SHAP Values in Machine Learning](https://github.com/ol-s-cloud/shap)
+2. [Ensemble Methods for Prediction](https://scikit-learn.org/stable/modules/ensemble.html)
+3. [Feature Engineering](https://en.wikipedia.org/wiki/Feature_engineering)
+   
+4. **Orange Data Studio**: An open-source machine learning platform used in this research. You can either download Orange or install Orange with pip
+
+It is recommended to use a standalone installer or conda, You will need a C/C++ compiler (on Windows we suggest using Microsoft Visual Studio Build Tools). Orange needs PyQt to run. Install either:
+
+PyQt5 and PyQtWebEngine: pip install -r requirements-pyqt.txt
+PyQt6 and PyQt6-WebEngine: pip install PyQt6 PyQt6-WebEngine
+
+Why Orange;
+
    - Comprehensive data mining and visualization tool
    - Supports wide range of machine learning algorithms
    - Key tool in developing and visualizing the startup IPO prediction models
+   - 
+- See: https://orangedatamining.com, https://github.com/biolab/orange3
+
+
+
+
+
 
 ### Industry Reports
 1. [State of European Tech 2023](https://example.com)
